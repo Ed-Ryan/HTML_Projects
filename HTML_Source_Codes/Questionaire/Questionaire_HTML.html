@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questionaire</title>
+    </head>
+    <body>
+        <form action="Questionaire_Data.txt" name="Edward's Questionaire" method="POST">
+        First name: <input type="text" name="firstname"><br><br>
+        Last name: <input type="text" name="lastname"><br><br>
+        Email: <input type="email" name="email"><br><br>
+        Telephone Number: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        When is your birthday: <input type="date" name="birthday"><br><br>
+        How old are you: <input type="number" name="Age" min="0"><br><br>
+        What is your volume currently at: <input type="range" id="volume" name="vol" min="0" max="100"><br><br>
+
+        What gender do you identify as: <br>
+        <input type="radio" name="sex" value="Man">Man<br>
+        <input type="radio" name="sex" value="Woman">Woman<br>
+        <input type="radio" name="sex" value="Transgender">Transgender<br>
+        <input type="radio" name="sex" value="Non-binary">Non-binary<br>
+        <input type="radio" name="sex" value="Prefer not to say">Prefer not to say<br>
+        Other Identity: <input type="text" name="Other Identity"><br><br>
+
+        What describes your level of education:<br>
+        <input type="checkbox" name="High School/GED">High School/GED<br>
+        <input type="checkbox" name="Some College">Some College<br>
+        <input type="checkbox" name="Associates">Associates<br>
+        <input type="checkbox" name="Bachelors">Bachelors<br>
+        <input type="checkbox" name="Masters">Masters<br>
+        <input type="Checkbox" name="PHd">PHd<br><br>
+
+        Your favorite thing for dinner is: <input type="text" name="dinner"><br><br>
+
+        What would your ideal vacation be:<br>
+        <select name="vacation">
+            <option value="Beach Trip" selected="selected">Beach Trip<br></option>
+            <option value="Stay at home" selected="selected">Stay at Home<br></option>
+            <option value="Destination Vacation" selected="selected">Destination Vacation<br></option>
+            <option value="Other" selected="selected">Other<br></option>
+        </select><br>
+
+        Comments:<br>
+            <textarea rows="4" cols="30"></textarea><br>
+        
+        <input type="submit" value="Submit the questionaire"/>
+        <input type="reset" value="Reset"/>
+        </form>
+    </body>
+</html>
